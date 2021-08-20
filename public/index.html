@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Overlock";
+        src: url(./assets/fonts/overlock/Overlock-Regular.ttf);
+      }
+      @font-face {
+        font-family: "Overlock-Bold";
+        src: url(./assets/fonts/overlock/Overlock-Bold.ttf);
+      }
+
+      html,
+      body {
+        padding: 0;
+        background-color: #538135 !important;
+      }
+
+      .nav-link.active {
+        color: #495057 !important;
+      }
+      * {
+        font-family: "Overlock";
+        color: whitesmoke;
+      }
+      .factory-bold {
+        font-family: "Overlock-Bold";
+      }
+    </style>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" />
+    <title>Bony237 Resume (HNGi8 task2)</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="pt-2 d-flex justify-content-between">
+        <div class="d-flex align-items-center flex-wrap">
+          <span id="name" class="fs-3 factory-bold me-5"
+            >Bony J. Ngounou (bony237)</span
+          >
+          <div class="d-flex align-items-center">
+            <a href="https://github.com/bony237" target="_blank" class="me-3">
+              <img src="./assets/images/github.png" alt="github" height="26" />
+            </a>
+            <a
+              href="https://twitter.com/bony237_rhythm"
+              target="_blank"
+              class="me-3"
+            >
+              <img
+                src="./assets/images/twitter.png"
+                alt="twitter"
+                height="26"
+              />
+            </a>
+            <a
+              href="www.linkedin.com/in/bony-junior-ngounou-ngoubeyou"
+              target="_blank"
+              class="me-3"
+            >
+              <img
+                src="./assets/images/linkedin.png"
+                alt="linkedin"
+                height="26"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/bony.ngounou.237"
+              target="_blank"
+              class="me-3"
+            >
+              <img
+                src="./assets/images/facebook.png"
+                alt="facebook"
+                height="26"
+              />
+            </a>
+          </div>
+        </div>
+        <a
+          href="https://internship.zuri.team/"
+          target="_blank"
+          class="mt-2 mt-md-1"
+          ><img
+            src="https://hng.tech/img/brand-logo.png"
+            alt="HNG logo"
+            height="40"
+        /></a>
+      </header>
+      <div
+        class="
+          col-12 col-lg-10
+          mx-auto
+          dev-illus
+          d-flex
+          flex-column flex-md-row
+          align-items-stretch
+          my-5
+        "
+      >
+        <div class="col-md-5">
+          <!-- Slider main container -->
+          <div class="swiper-container h-100">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide d-flex justify-content-center">
+                <img
+                  src="./assets/images/illus_responsiveness.png"
+                  alt="responsive"
+                  class="align-self-center"
+                />
+              </div>
+              <div class="swiper-slide d-flex justify-content-center">
+                <img
+                  src="./assets/images/illus_task.png"
+                  alt="responsive"
+                  class="align-self-center"
+                />
+              </div>
+              <div class="swiper-slide d-flex justify-content-center">
+                <img
+                  src="./assets/images/illus_creative.png"
+                  alt="responsive"
+                  class="align-self-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about-me" class="py-4 col-md-7 text-center text-md-start">
+          <div class="title fs-1 factory-bold">
+            Hello, I'm Bony and <br />
+            I'm a full-stack developer.
+          </div>
+
+          <div class="presentation fs-3 mt-3">
+            I am polyvalent on any web or mobile development technology that
+            implements the <span class="factory-bold">JavaScript</span> or
+            <span class="factory-bold">TypeScript</span> language. Here is my
+            favorite stack:
+            <span class="factory-bold">
+              ExpressJs, NodeJs, ReactJs, React Native
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="my-stack">
+        <div id="skills-graph" class="col-12 col-xl-10 mx-auto">
+          <div class="title fs-1 factory-bold">Here are my skills</div>
+          <div class="card text-center bg-transparent">
+            <div class="card-header">
+              <ul
+                class="nav nav-tabs card-header-tabs"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item active" role="presentation">
+                  <button
+                    class="nav-link text-reset active"
+                    id="frontend-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#frontend"
+                    type="button"
+                    role="tab"
+                    aria-controls="frontend"
+                    aria-selected="true"
+                  >
+                    Frontend
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-reset"
+                    id="backend-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#backend"
+                    type="button"
+                    role="tab"
+                    aria-controls="backend"
+                    aria-selected="false"
+                  >
+                    Backend
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-reset"
+                    id="mobile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#mobile"
+                    type="button"
+                    role="tab"
+                    aria-controls="mobile"
+                    aria-selected="false"
+                  >
+                    Mobile
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-reset"
+                    id="cloud-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#cloud"
+                    type="button"
+                    role="tab"
+                    aria-controls="cloud"
+                    aria-selected="false"
+                  >
+                    Cloud computing
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-reset"
+                    id="agile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#agile"
+                    type="button"
+                    role="tab"
+                    aria-controls="agile"
+                    aria-selected="false"
+                  >
+                    Project management
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content text-start" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="frontend"
+                  role="tabpanel"
+                  aria-labelledby="frontend-tab"
+                >
+                  <p class="fs-5">
+                    What technologies do I use to create interfaces? :
+                  </p>
+                  <ul class="">
+                    <li class="my-3">
+                      <span class="factory-bold">Html5, Css3</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 9 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">ReactJs</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 9 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">Bootstrap</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 8 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">MaterialUI</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 7 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">ReduxJs</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 7 / 10</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="backend"
+                  role="tabpanel"
+                  aria-labelledby="backend-tab"
+                >
+                  <p class="fs-5">
+                    What technologies do I use to manage user requests and to
+                    deal with DB? :
+                  </p>
+                  <ul class="">
+                    <li class="my-3">
+                      <span class="factory-bold">NodeJs</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 8 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">ExpressJs</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 8 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">Mongoose</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 7 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">Sequelize</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 6 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">MongoDB</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 7 / 10</span
+                      >
+                    </li>
+                    <li class="my-3">
+                      <span class="factory-bold">PostgreSQL</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 6 / 10</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="mobile"
+                  role="tabpanel"
+                  aria-labelledby="mobile-tab"
+                >
+                  <p class="fs-5">
+                    What technology am I good at creating mobile interfaces? :
+                  </p>
+                  <ul class="">
+                    <li class="my-3">
+                      <span class="factory-bold">React Native</span> -
+                      <span class="badge fw-light bg-light text-dark"
+                        >Level 6 / 10</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="cloud"
+                  role="tabpanel"
+                  aria-labelledby="cloud-tab"
+                >
+                  <p class="text-center fs-5">
+                    I am currently in training to master the
+                    <span class="factory-bold"
+                      >Google Cloud Platform (GCP)</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="agile"
+                  role="tabpanel"
+                  aria-labelledby="agile-tab"
+                >
+                  <ul class="fs-5">
+                    <li>
+                      I have already been responsible for more than
+                      <span class="factory-bold">3 business projects</span> and
+                      I have delivered them.
+                    </li>
+                    <li>
+                      I have already experienced
+                      <span class="factory-bold">Agile teamwork</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="others-details-skills">
+          <div id="used-languages"></div>
+          <div id="mastered-tools"></div>
+        </div>
+      </div>
+      <div id="get-in-touch" class="col-xl-10 my-5 mx-auto">
+        <div class="title fs-1 factory-bold">Get in touch</div>
+        <div id="contact-involving-message" class="fs-5">
+          If you want to contact me, chat with me about a collaboration on a
+          project or just say hello, fill out the form below or send an email to
+          <span class="factory-bold">nbj.ngoube@gmail.com</span> and let's start
+          a conversation.
+        </div>
+        <form class="my-4" method="POST" action="/contact">
+          <div class="d-flex flex-column flex-md-row my-3 my-md-0">
+            <input
+              type="text"
+              required
+              name="name"
+              id="form_name"
+              placeholder="enter your name*"
+              class="form-control me-md-4 my-3"
+            />
+            <input
+              type="email"
+              required
+              name="email"
+              id="form_email"
+              placeholder="enter your email address*"
+              class="form-control my-md-3"
+            />
+          </div>
+          <textarea
+            required
+            id="form_message"
+            name="message"
+            class="form-control"
+            placeholder="Your message*"
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Send"
+            class="btn btn-outline-light col-5 d-block factory-bold mt-4 -auto"
+          />
+        </form>
+      </div>
+      <footer class="text-center mb-3">
+        Copyright © 2021 All rights reserved
+      </footer>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/custom/skills-graph-config.js"></script>
+    <script type="module">
+      import { callMyName } from "./call_my_name.js";
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        loop: true,
+        speed: 400,
+
+        autoplay: {
+          delay: 2000,
+        },
+      });
+
+      callMyName();
+    </script>
+  </body>
+</html>
