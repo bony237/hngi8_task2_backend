@@ -4,7 +4,8 @@
   "description": "Task to be promote to stage 3 under backend track in the HNG Internship 8",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
