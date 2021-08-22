@@ -12,4 +12,4 @@ app.use(express.urlencoded({ extended: true }));
 // app.get('/', (req, res) => )
 app.use(contactRouter);
 
-app.listen(port, () => console.log("Server running at port 3000"));
+app.listen(port, () => console.log("Server running at port : " + port));

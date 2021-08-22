@@ -20,7 +20,7 @@
         background-color: #538135 !important;
       }
 
-      .nav-link.active {
+      .nav-link.active * {
         color: #495057 !important;
       }
       * {
@@ -31,6 +31,10 @@
         font-family: "Overlock-Bold";
       }
     </style>
+    <link
+      rel="stylesheet"
+      href="./assets/css/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" />
     <title>Bony237 Resume (HNGi8 task2)</title>
@@ -43,11 +47,17 @@
             >Bony J. Ngounou (bony237)</span
           >
           <div class="d-flex align-items-center">
-            <a href="https://github.com/bony237" target="_blank" class="me-3">
+            <a
+              href="https://github.com/bony237"
+              title="github"
+              target="_blank"
+              class="me-3"
+            >
               <img src="./assets/images/github.png" alt="github" height="26" />
             </a>
             <a
               href="https://twitter.com/bony237_rhythm"
+              title="twitter"
               target="_blank"
               class="me-3"
             >
@@ -59,6 +69,7 @@
             </a>
             <a
               href="www.linkedin.com/in/bony-junior-ngounou-ngoubeyou"
+              title="linkedin"
               target="_blank"
               class="me-3"
             >
@@ -70,6 +81,7 @@
             </a>
             <a
               href="https://www.facebook.com/bony.ngounou.237"
+              title="facebook"
               target="_blank"
               class="me-3"
             >
@@ -83,6 +95,7 @@
         </div>
         <a
           href="https://internship.zuri.team/"
+          title="HNG Internship"
           target="_blank"
           class="mt-2 mt-md-1"
           ><img
@@ -170,7 +183,8 @@
                     aria-controls="frontend"
                     aria-selected="true"
                   >
-                    Frontend
+                    <li class="fas fa-columns"></li>
+                    <span>Frontend</span>
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -184,7 +198,8 @@
                     aria-controls="backend"
                     aria-selected="false"
                   >
-                    Backend
+                    <li class="fas fa-server"></li>
+                    <span>Backend</span>
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -198,7 +213,8 @@
                     aria-controls="mobile"
                     aria-selected="false"
                   >
-                    Mobile
+                    <li class="fas fa-mobile-alt"></li>
+                    <span>Mobile</span>
                   </button>
                 </li>
 
@@ -213,7 +229,8 @@
                     aria-controls="cloud"
                     aria-selected="false"
                   >
-                    Cloud computing
+                    <li class="fas fa-cloud"></li>
+                    <span>Cloud computing</span>
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -227,7 +244,8 @@
                     aria-controls="agile"
                     aria-selected="false"
                   >
-                    Project management
+                    <li class="fas fa-tasks"></li>
+                    <span>Project management</span>
                   </button>
                 </li>
               </ul>
@@ -399,7 +417,7 @@
               required
               name="name"
               id="form_name"
-              placeholder="enter your name*"
+              placeholder="Enter your name*"
               class="form-control me-md-4 my-3"
             />
             <input
@@ -407,7 +425,7 @@
               required
               name="email"
               id="form_email"
-              placeholder="enter your email address*"
+              placeholder="Enter your email address*"
               class="form-control my-md-3"
             />
           </div>
@@ -447,7 +465,7 @@
         },
       });
 
-      callMyName();
+      // callMyName();
     </script>
   </body>
 </html>
