@@ -37,11 +37,11 @@
     />
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" />
-    <title>Bony237 Resume (HNGi8 task2)</title>
+    <title>Bony237 Portfolio</title>
   </head>
   <body>
     <div class="container">
-      <header class="pt-2 d-flex justify-content-between">
+      <header class="pt-2 d-flex justify-content-between align-items-start">
         <div class="d-flex align-items-center flex-wrap">
           <span id="name" class="fs-3 factory-bold me-5"
             >Bony J. Ngounou (bony237)</span
@@ -94,14 +94,24 @@
           </div>
         </div>
         <a
-          href="https://internship.zuri.team/"
-          title="HNG Internship"
-          target="_blank"
-          class="mt-2 mt-md-1"
-          ><img
-            src="https://hng.tech/img/brand-logo.png"
-            alt="HNG logo"
-            height="40"
+          href="./assets/documents/CV Bony J. Ngounou.pdf"
+          title="CV Bony237"
+          download
+          class="
+            mt-2 mt-md-1
+            text-decoration-none
+            d-flex
+            align-items-center
+            small
+            btn btn-outline-light
+            text-dark
+            btn-sm
+          "
+        >
+          <span class="me-2 fw-bold fst-italic">
+            <span class="d-none d-md-inline">Télécharger mon </span> CV</span
+          >
+          <img src="./assets/images/cv_file.png" alt="CV logo" height="25"
         /></a>
       </header>
       <div
@@ -146,25 +156,25 @@
           </div>
         </div>
         <div id="about-me" class="py-4 col-md-7 text-center text-md-start">
-          <div class="title fs-1 factory-bold">
-            Hello, I'm Bony and <br />
-            I'm a full-stack developer.
+          <div class="title fs-2 factory-bold">
+            Salut, Je m'appelle Bony et <br />
+            Je suis un développeur Full Stack Intermédiaire.
           </div>
 
-          <div class="presentation fs-3 mt-3">
-            I am polyvalent on any web or mobile development technology that
-            implements the <span class="factory-bold">JavaScript</span> or
-            <span class="factory-bold">TypeScript</span> language. Here is my
-            favorite stack:
+          <div class="presentation fs-4 mt-3">
+            Je suis polyvalent sur toute technologie de développement web ou
+            mobile qui met en œuvre le
+            <span class="factory-bold">JavaScript</span>. Voici mon cadre
+            technologique de prédilection :
             <span class="factory-bold">
-              ExpressJs, NodeJs, ReactJs, React Native
+              ExpressJs, NodeJs, ReactJs, React Native, ReduxJs
             </span>
           </div>
         </div>
       </div>
       <div id="my-stack">
         <div id="skills-graph" class="col-12 col-xl-10 mx-auto">
-          <div class="title fs-1 factory-bold">Here are my skills</div>
+          <div class="title fs-1 factory-bold">Voici mes compétences</div>
           <div class="card text-center bg-transparent">
             <div class="card-header">
               <ul
@@ -245,7 +255,7 @@
                     aria-selected="false"
                   >
                     <li class="fas fa-tasks"></li>
-                    <span>Project management</span>
+                    <span>Gestion de projet</span>
                   </button>
                 </li>
               </ul>
@@ -259,37 +269,38 @@
                   aria-labelledby="frontend-tab"
                 >
                   <p class="fs-5">
-                    What technologies do I use to create interfaces? :
+                    Quelles technologies j'utilise pour gérer l'interface et
+                    l'expérience utilisateur sur le web ? :
                   </p>
                   <ul class="">
                     <li class="my-3">
                       <span class="factory-bold">Html5, Css3</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 9 / 10</span
+                        >Niveau 9 / 10</span
                       >
                     </li>
                     <li class="my-3">
                       <span class="factory-bold">ReactJs</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 9 / 10</span
+                        >Niveau 9 / 10</span
                       >
                     </li>
                     <li class="my-3">
                       <span class="factory-bold">Bootstrap</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 8 / 10</span
+                        >Niveau 8 / 10</span
                       >
                     </li>
                     <li class="my-3">
                       <span class="factory-bold">MaterialUI</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 7 / 10</span
+                        >Niveau 7 / 10</span
                       >
                     </li>
                     <li class="my-3">
                       <span class="factory-bold">ReduxJs</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 7 / 10</span
+                        >Niveau 7 / 10</span
                       >
                     </li>
                   </ul>
@@ -301,44 +312,40 @@
                   aria-labelledby="backend-tab"
                 >
                   <p class="fs-5">
-                    What technologies do I use to manage user requests and to
-                    deal with DB? :
+                    Quelles technologies j'utilise pour gérer les requêtes de
+                    l'interface utilisateur et pour interagir avec les
+                    ressources de la BD ? :
                   </p>
                   <ul class="">
                     <li class="my-3">
-                      <span class="factory-bold">NodeJs</span> -
+                      <span class="factory-bold"> NodeJs</span>
+                      -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 8 / 10</span
+                        >Niveau 8 / 10</span
                       >
                     </li>
                     <li class="my-3">
                       <span class="factory-bold">ExpressJs</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 8 / 10</span
+                        >Niveau 8 / 10</span
                       >
                     </li>
                     <li class="my-3">
-                      <span class="factory-bold">Mongoose</span> -
+                      <span class="factory-bold"
+                        >Mongoose (interaction avec MongoDB)</span
+                      >
+                      -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 7 / 10</span
+                        >Niveau 7 / 10</span
                       >
                     </li>
                     <li class="my-3">
-                      <span class="factory-bold">Sequelize</span> -
-                      <span class="badge fw-light bg-light text-dark"
-                        >Level 6 / 10</span
+                      <span class="factory-bold"
+                        >Sequelize (interaction avec PostgreSQL)</span
                       >
-                    </li>
-                    <li class="my-3">
-                      <span class="factory-bold">MongoDB</span> -
+                      -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 7 / 10</span
-                      >
-                    </li>
-                    <li class="my-3">
-                      <span class="factory-bold">PostgreSQL</span> -
-                      <span class="badge fw-light bg-light text-dark"
-                        >Level 6 / 10</span
+                        >Niveau 6 / 10</span
                       >
                     </li>
                   </ul>
@@ -350,13 +357,14 @@
                   aria-labelledby="mobile-tab"
                 >
                   <p class="fs-5">
-                    What technology am I good at creating mobile interfaces? :
+                    En Quelles technologies suis-je bon pour créer des
+                    interfaces mobiles ? :
                   </p>
                   <ul class="">
                     <li class="my-3">
                       <span class="factory-bold">React Native</span> -
                       <span class="badge fw-light bg-light text-dark"
-                        >Level 6 / 10</span
+                        >Niveau 6 / 10</span
                       >
                     </li>
                   </ul>
@@ -368,12 +376,22 @@
                   role="tabpanel"
                   aria-labelledby="cloud-tab"
                 >
-                  <p class="text-center fs-5">
-                    I am currently in training to master the
-                    <span class="factory-bold"
-                      >Google Cloud Platform (GCP)</span
-                    >
-                  </p>
+                  <div class="d-flex align-items-center col-10 mx-auto">
+                    <img
+                      src="./assets/images/gcp_illustration.png"
+                      alt="gcp logo"
+                      height="100"
+                      class="me-2"
+                    />
+                    <span class="text-cente fs-5 px-4">
+                      Je poursuis actuellement une formation sur le Cloud
+                      Computing et plus précisement dans la gestion de la
+                      plateforme
+                      <span class="factory-bold"
+                        >Google Cloud Platform (GCP)</span
+                      >
+                    </span>
+                  </div>
                 </div>
                 <div
                   class="tab-pane fade"
@@ -381,15 +399,19 @@
                   role="tabpanel"
                   aria-labelledby="agile-tab"
                 >
-                  <ul class="fs-5">
-                    <li>
-                      I have already been responsible for more than
-                      <span class="factory-bold">3 business projects</span> and
-                      I have delivered them.
+                  <ul class="fs-5 list-group list-group-flush">
+                    <li class="list-group-item bg-transparent text-reset">
+                      J'expérimente au quotidien le
+                      <span class="factory-bold"
+                        >développement Agile en équipe</span
+                      >
                     </li>
-                    <li>
-                      I have already experienced
-                      <span class="factory-bold">Agile teamwork</span>
+                    <li class="list-group-item bg-transparent text-reset">
+                      J'ai été responsable de
+                      <span class="factory-bold">3 projets</span>
+                      de développement de solution (web et mobile) et je les ai
+                      livrés en accord avec le cahier de charge des
+                      fonctionnalités.
                     </li>
                   </ul>
                 </div>
@@ -403,12 +425,13 @@
         </div>
       </div>
       <div id="get-in-touch" class="col-xl-10 my-5 mx-auto">
-        <div class="title fs-1 factory-bold">Get in touch</div>
+        <div class="title fs-1 factory-bold">Rester en Contact</div>
         <div id="contact-involving-message" class="fs-5">
-          If you want to contact me, chat with me about a collaboration on a
-          project or just say hello, fill out the form below or send an email to
-          <span class="factory-bold">nbj.ngoube@gmail.com</span> and let's start
-          a conversation.
+          Si vous souhaitez me contacter, discutez avec moi d'une collaboration
+          sur un projet ou simplement dire bonjour, remplissez le formulaire
+          ci-dessous ou envoyez un e-mail à
+          <span class="factory-bold">nbj.ngoube@gmail.com</span> et commençons
+          une conversation.
         </div>
         <form class="my-4" method="POST" action="/contact">
           <div class="d-flex flex-column flex-md-row my-3 my-md-0">
@@ -417,7 +440,7 @@
               required
               name="name"
               id="form_name"
-              placeholder="Enter your name*"
+              placeholder="Entrez votre nom*"
               class="form-control me-md-4 my-3"
             />
             <input
@@ -425,7 +448,7 @@
               required
               name="email"
               id="form_email"
-              placeholder="Enter your email address*"
+              placeholder="Entrez votre addresse email*"
               class="form-control my-md-3"
             />
           </div>
@@ -434,12 +457,12 @@
             id="form_message"
             name="message"
             class="form-control"
-            placeholder="Your message*"
+            placeholder="Votre message*"
           ></textarea>
 
           <input
             type="submit"
-            value="Send"
+            value="Envoyer"
             class="btn btn-outline-light col-5 d-block factory-bold mt-4 -auto"
           />
         </form>
